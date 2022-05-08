@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import Display from "./DisplayContador";
+import Boton from "./ButtonContador";
 
 const Contador = (props) => {
   const [counter, setCounter] = useState(0);
@@ -13,13 +15,11 @@ const Contador = (props) => {
   return (
     <>
       <h1> Ejemplo simple de UseState con un contador</h1>
+      <Display counter={counter} />
       <div>
-        <span>{counter}</span>
-      </div>
-      <div>
-        <button onClick={sumarUno}>sumar 1</button>
-        <button onClick={restarUno}>restar 1</button>
-        <button onClick={reset}>reset</button>
+        <Boton handleClick={sumarUno} text="sumar 1" />
+        <Boton handleClick={restarUno} text="restar 1" />
+        <Boton handleClick={reset} text="reset" />
       </div>
     </>
   );
