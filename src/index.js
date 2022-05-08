@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 import Total from "./Total";
 import Content from "./Content";
+import Contador from "./Contador";
 
 const App = () => {
   const course = {
@@ -15,11 +16,16 @@ const App = () => {
   };
 
   return (
+    <>
     <div>
       <Header course={course} />
       <Content course={course} />
       <Total course={course} />
     </div>
+    <div>
+      <Contador />
+    </div>
+    </>
   );
 };
 
