@@ -1,19 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./Header";
-import Total from "./Total";
-import Content from "./Content";
-import Contador from "./Contador";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './Header'
+import Total from './Total'
+import Content from './Content'
+import Contador from './Contador'
 
 const App = () => {
   const course = {
-    name: "Half Stack application development",
+    name: 'Half Stack application development',
     parts: [
-      { name: "Fundamentals of React", exercises: 10 },
-      { name: "Using props to pass data", exercises: 7 },
-      { name: "State of a component", exercises: 14 },
-    ],
-  };
+      { name: 'Fundamentals of React', exercises: 10 },
+      { name: 'Using props to pass data', exercises: 7 },
+      { name: 'State of a component', exercises: 14 }
+    ]
+  }
 
   return (
     <>
@@ -26,7 +26,7 @@ const App = () => {
       <Contador />
     </div>
     </>
-  );
-};
+  )
+}
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'))

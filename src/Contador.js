@@ -1,16 +1,16 @@
-import React from "react";
-import { useState } from "react";
-import Display from "./DisplayContador";
-import Boton from "./ButtonContador";
+import React, { useState } from 'react'
+
+import Display from './DisplayContador'
+import Boton from './ButtonContador'
 
 const Contador = (props) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0)
 
-  const sumarUno = () => setCounter(counter + 1);
+  const sumarUno = () => setCounter(counter + 1)
 
-  const restarUno = () => setCounter(counter - 1);
+  const restarUno = () => setCounter(counter - 1)
 
-  const reset = () => setCounter(0);
+  const reset = () => setCounter(0)
 
   return (
     <>
@@ -22,7 +22,7 @@ const Contador = (props) => {
         <Boton handleClick={reset} text="reset" />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Contador;
+export default Contador
