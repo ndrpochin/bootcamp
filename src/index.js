@@ -4,6 +4,7 @@ import Header from './Header'
 import Total from './Total'
 import Content from './Content'
 import Contador from './Contador'
+import Unicafe from './Unicafe'
 
 const App = () => {
   const course = {
@@ -24,6 +25,11 @@ const App = () => {
     </div>
     <div>
       <Contador />
+    </div>
+    <hr />
+    <div>
+      <h1>A partir de acá se ejecuta el ejercicio de la parte D (1.6 a 1.14)</h1>
+      <Unicafe />
     </div>
     </>
   )
